@@ -1,13 +1,13 @@
 import React from 'react';
-const Def = require('../default.js')
+import Def from '../default.js';
 
 
-function edit_form (data) {
+function edit_form(data) {
     return (
-        <Def>
-          <main>
-                <h1>Edit Page</h1>
-                <form method="POST" action={`/places/${data.place.id}?_method=PUT`}>
+      <Def>
+        <main>
+          <h1>Edit Page</h1>
+          <form method="POST" action={`/places/${data.place.id}?_method=PUT`}>
                     <div className="row">
                         <div className="form-group col-sm-6">
                             <label htmlFor="name">Place Name</label>
